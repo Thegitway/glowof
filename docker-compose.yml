@@ -1,0 +1,25 @@
+﻿version: '3.4'
+services:
+  maDB:
+    image: mariadb:latest
+    environment:
+      MARIADB_USER: "boring"
+      MARIADB_PASSWORD: "OUMAIMA"
+      MARIADB_ROOT_PASSWORD: "OUMAIMA"
+    ports:
+      - "3306:3306"
+  glowof:
+    build: .
+    image: theboringway/glowof:back
+    ports:
+      - "5037:80"
+    depends_on:
+      - maDB
+      
+
+        
+      
+      
+      
+      
+    
