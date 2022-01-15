@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("dockerDB");
+var connectionString = builder.Configuration.GetConnectionString("mariaDB");
 builder.Services.AddDbContext<GlowContext>(context=>
     context.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)));
 

@@ -4,8 +4,8 @@ services:
     image: mariadb:latest
     environment:
       MARIADB_USER: "boring"
-      MARIADB_PASSWORD: "OUMAIMA"
-      MARIADB_ROOT_PASSWORD: "OUMAIMA"
+      MARIADB_PASSWORD: "OUKIL"
+      MARIADB_ROOT_PASSWORD: "OUKIL"
     ports:
       - "3306:3306"
   glowof:
@@ -15,11 +15,3 @@ services:
       - "5037:80"
     depends_on:
       - maDB
-      
-
-        
-      
-      
-      
-      
-    

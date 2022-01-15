@@ -1,49 +1,49 @@
 
-import styled,{keyframes} from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 
-const Scaffold=styled.div`
+const Scaffold = styled.div`
 width: 90vw;
 height: 90vh;
 background-color: white;
 `
 
-const Image=styled.img`
+const Image = styled.img`
    object-fit:cover;
   width: 40vw;
   height: 90vh;
   border-radius: 0px;
 `
 
-const Column=styled.div`
+const Column = styled.div`
 display: flex;
 margin-left: 5%;
 justify-content: start;
 align-items: start;
 flex-direction: column;
 `
-const Row=styled.div`
+const Row = styled.div`
 display: flex;
 padding:3%;
 justify-content: space-between;
 align-items: flex-start;
 `
-const Title=styled.h1`
+const Title = styled.h1`
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: 200;
 `
-const Price=styled.div`
+const Price = styled.div`
 font-weight: 100;
 font-size: 40px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 
 `
-const Info=styled.div`
+const Info = styled.div`
 margin: 10px 0px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 
 `
-const ContainerImage=styled.div`
+const ContainerImage = styled.div`
 display: flex;
 margin-top: 5%;
 align-items: center;
@@ -68,24 +68,24 @@ const Rotate = styled.div`
 `;
 
 export default function Details() {
- 
- 
-  
+
+
+
   return (
     <Scaffold>
-    <Row>
-    <Image flex="1" src={"user.png"}/>
-   <Column>
-    <Title >
-      OUMAIMA AFRAOUI
-    </Title>
-    <Info>
-    A princess is the daughter of a king or queen, or the wife of a prince. Some children like to have princess parties because they get to wear fancy dresses, tiaras, and little plastic high heels. In countries that are monarchies, rulers are born into their positions and are typically called kings and queens.    </Info>
-    <Price>Wydad 37</Price>
-    </Column>
-    </Row>
-      
+      <Row>
+        <Image flex="1" src={"user.png"} />
+        <Column>
+          <Title >
+            Guts
+          </Title>
+          <Info>
+            Guts, renowned as the "Black Swordsman", is a former mercenary and branded wanderer who travels the world in a constant internal struggle between pursuing his own ends and upholding his attachments to those dear to him.          </Info>
+          <Price>Berserk</Price>
+        </Column>
+      </Row>
+
     </Scaffold>
   )
-  
+
 }

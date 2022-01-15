@@ -52,7 +52,7 @@ export class FetchData extends Component {
   }
 
   async populate() {
-    const response = await fetch('http://20.101.92.75/product');
+    const response = await fetch('http://localhost:5037/product');
     const data = await response.json();
     this.setState({ data: data, loading: false });
   }

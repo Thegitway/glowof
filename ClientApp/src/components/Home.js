@@ -9,7 +9,7 @@ padding: 4%;
 border-radius: 20px;
 `
 const Box=styled.div`
-background-color:pink;
+background-color:coral;
       height:100vh;
       width:100vw;
       display:flex;
